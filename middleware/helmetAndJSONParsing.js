@@ -16,7 +16,7 @@ app.use(express.urlencoded({extended:false}));
 
 app.post('/ajax', (req,res)=>{
     console.log(req.body) // this will contain the json object from client
-    res.send("Test")
+    res.json("Test")// This will send mime type as JSON.
 })
 
 
