@@ -26,8 +26,10 @@ app.get('/', (req,res,next)=>{
     // });
 
     // EJS is the view engine for express
-
-    res.render("index");
+    // data is second arg is appended to res.locals
+    res.render("index", {
+        msg:"succeess"
+    });
 
 
 })
